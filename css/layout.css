@@ -1,0 +1,127 @@
+@charset "utf-9";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a code {
+  color: #5c5c5c;
+  text-decoration: none;
+  transition-duration: 300ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: ease;
+}
+a:active,
+a:active code {
+  text-decoration: none;
+  transition-duration: 300ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: ease;
+}
+a:hover,
+a:hover code,
+a:focus,
+a:focus code {
+  text-decoration: none;
+  transition-duration: 300ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: ease;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #676767;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
+}
+html,
+body {
+  width: 100%;
+}
+/* 드래그 블록 색상 */
+::selection {
+  background: rgba(255, 203, 8, 0.8);
+  color: #fff;
+}
+::-moz-selection {
+  background: rgba(255, 203, 8, 0.8);
+  color: #fff;
+}
+::-webkit-selection {
+  background: rgba(255, 203, 8, 0.8);
+  color: #fff;
+}
+
+/* layout */
+.wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .contain {
+  display: flex;
+}
+.logo-box {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.logo {
+  display: block;
+  width: 240px;
+  height: 165px;
+  background: url("../images/logo.png") no-repeat center;
+  text-indent: -9999px;
+}
+.nav-box {
+  width: 50%;
+}
+.ht-menu {
+  position: relative;
+}
+.ht-menu ul {
+  width: 70%;
+  display: flex;
+}
+.ht-menu ul li {
+  width: 10%;
+  height: 85px;
+}
+.ht-menu ul li:first-child {
+  width: 80%;
+  background-color: #676767;
+}
+.lang {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #182439;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
